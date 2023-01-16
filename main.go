@@ -15,6 +15,7 @@ type File struct {
 
 
 func main() {
+	os.Mkdir("public", 0666)
 	PORT := ":8080"
 
 	Wg := sync.WaitGroup{}
